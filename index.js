@@ -1,5 +1,6 @@
 const express=require('express');
 const bodyParser = require('body-parser');
+<<<<<<< HEAD
 
 //Load environment variables from .env file
 require('dotenv').config();
@@ -10,6 +11,10 @@ const app=express();
 const port=process.env.PORT;
 const secretKey=process.env.SECRETKEY;
 
+=======
+const app=express();
+const port=3000;
+>>>>>>> 210e4e73f89bd10aeb4021ffb533130d98b62cdb
 app.use(bodyParser.json());
 app.get('/',(req,res)=>{
     res.send('Hello  hi there');
